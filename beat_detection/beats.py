@@ -19,7 +19,8 @@ import os
 # ##############################################################################
 # Don't worry about streams and all that, the only thing that matters here is
 # we plug in a URL and the audio gets saved as "music.mp3". We only download
-# if the file isn't already there
+# if the file isn't already there, so if you change URLs be sure to delete the
+# file "music.mp3" so that it gets downloaded again!
 if not os.path.exists("./music.mp3"):
     video = YouTube("https://www.youtube.com/watch?v=EAAnlSEVk94")
     audio_stream = video.streams.filter(
