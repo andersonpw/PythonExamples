@@ -28,7 +28,7 @@ if not os.path.exists("./music.mp3"):
     audio_stream.download(filename="music.mp3")
 
 # ##############################################################################
-# STEP 2 - Download some music from YouTube
+# STEP 2 - Find the beat and put a click track over it
 # ##############################################################################
 
 # First, we use librosa to load the audio file we just obtained. The syntax
